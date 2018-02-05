@@ -43,8 +43,8 @@
                          consectetur adipisicing elit. Dolore, ea!
                     </p>
                     <div class="contact-form">
-                        <form id="contact-form" method="#" action="#" role="form">
-                
+                        <form id="contact-form" method="post" action="{{ route('messages') }}" role="form">
+                        {{ csrf_field() }}
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
                                 <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
                             </div>
@@ -58,7 +58,7 @@
                             </div>
                             
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
-                                <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>    
+                                <textarea rows="6" placeholder="Message" class="form-control" name="body" id="message"></textarea>    
                             </div>
                             
                             <div id="success" class="success">
@@ -70,7 +70,7 @@
                             </div>
                             
                             <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
-                                <input type="submit" id="contact-submit" class="btn btn-default btn-send" value="Send Message">
+                                <input type="submit" id="contact-submit" class="btn btn-default btn-send" value="Send Message 1">
                             </div>                      
                         </form>
                     </div>
