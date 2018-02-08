@@ -35,6 +35,17 @@
 <section id="contact-section">
     <div class="container">
         <div class="row">
+        @if(session()->has('flash'))
+        <div class="alert alert-success" role="alert">
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <h4 class="alert-heading">Well done!</h4>
+  {{ session()->get('flash') }}
+</div>
+@endif
+
+
             <div class="col-md-6">
                 <div class="block">
                     <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Contact With Me</h2>
@@ -46,19 +57,19 @@
                         <form id="contact-form" method="post" action="{{ route('messages') }}" role="form">
                         {{ csrf_field() }}
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
-                                <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                                <input type="text" placeholder="Your Name" class="form-control" name="name" id="name" required>
                             </div>
                             
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email" id="email" >
+                                <input type="email" placeholder="Your Email" class="form-control" name="email" id="email" required>
                             </div>
                             
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
-                                <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+                                <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject" required>
                             </div>
                             
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
-                                <textarea rows="6" placeholder="Message" class="form-control" name="body" id="message"></textarea>    
+                                <textarea rows="6" placeholder="Message" class="form-control" name="body" id="message" required></textarea>    
                             </div>
                             
                             <div id="success" class="success">
@@ -84,7 +95,7 @@
                         
                     </p>
                     <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.277552998015!2d90.3678744!3d23.773128800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0ae4adf3cb9%3A0x7f2cf443b764e4a4!2sShishu+Mela!5e0!3m2!1sen!2s!4v1435516022247" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15913.824908453533!2d-74.40380363263925!3d4.325072208537129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f04b1f5b28bb7%3A0x3fc077f91422ce73!2sBatall%C3%B3n+Sumapaz!5e0!3m2!1ses-419!2sco!4v1518102779190" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
                         
                     </div>
                 </div>
