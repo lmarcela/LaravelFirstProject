@@ -14,11 +14,11 @@ Slider Section Start
                 <!-- Slider -->
                 <section class="cd-intro">
                     <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
-                    <span>HI, MY NAME IS JONATHON & I AM A</span><br>
+                    <span>HI, MY NAME IS MARCELA & I AM A</span><br>
                     <span class="cd-words-wrapper">
                         <b class="is-visible">DESIGNER</b>
                         <b>DEVELOPER</b>
-                        <b>FATHER</b>
+                        <b>SYSTEM ENGINEER</b>
                     </span>
                     </h1>
                     </section> <!-- cd-intro -->
@@ -46,7 +46,7 @@ About Section Start
                     ABOUT ME
                     </h2>
                     <p>
-                        Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries
+                        Hello, I’m a UI/UX Designer & Front End Developer from Colombia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries
                     </p>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero.
